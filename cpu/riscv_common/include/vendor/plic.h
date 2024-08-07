@@ -26,5 +26,5 @@
 
 #define PLIC_MAX_TARGET                 15871
 #define PLIC_TARGET_MASK                0x3FFF
-
+ 
 #endif /* VENDOR_PLIC_H */

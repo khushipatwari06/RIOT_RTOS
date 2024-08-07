@@ -1,0 +1,18 @@
+# Copyright (c) 2024 iitm
+#
+# This file is subject to the terms and conditions of the GNU Lesser
+# General Public License v2.1. See the file LICENSE in the top level
+# directory for more details.
+
+config BOARD
+    default "arty100t" if BOARD_ARTY100T
+
+config BOARD_ARTY100T
+    bool
+    default y
+    select CPU_MODEL_FE310_G002
+
+    # Put defined MCU peripherals here (in alphabetical order)
+    select HAS_PERIPH_UART
+
+    # Put other features for this board (in alphabetical order)
